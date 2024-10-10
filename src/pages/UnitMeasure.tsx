@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Card, CardContent } from '@/components/ui/card';
-import { Moon, Sun, Copy, Check } from 'lucide-react';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Moon, Sun, Copy, Check, Send } from 'lucide-react';
 import { useTheme } from '@/components/theme-provider';
 import { AnimatePresence, motion } from 'framer-motion';
 import { toast } from 'react-hot-toast';
@@ -75,9 +75,7 @@ export const UnitMeasure: React.FC = () => {
       <Card className='mb-8'>
         <CardContent className='p-6'>
           <div className='flex justify-between items-center mb-6'>
-            <h2 className='text-xl font-semibold text-primary'>
-              TON Converter Unit
-            </h2>
+            <h2 className='text-2xl font-bold'>TON Converter</h2>
             <Button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               size='icon'
@@ -163,6 +161,18 @@ export const UnitMeasure: React.FC = () => {
             ))}
           </div>
         </CardContent>
+
+        <CardFooter className='flex justify-center pt-6'>
+          <a
+            href='https://t.me/arveer'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='flex items-center text-sm text-muted-foreground hover:text-primary transition-colors'
+          >
+            <Send className='h-4 w-4 mr-2' />
+            Contact me on Telegram
+          </a>
+        </CardFooter>
       </Card>
     </div>
   );

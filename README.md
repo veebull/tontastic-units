@@ -109,7 +109,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@TheMrArmbull](https://twitter.com/TheMrArmbull) - email@example.com
+Telegram - [@Arveer](https://t.me/arveer)
 
 Project Link: [https://veebull.github.io/tontastic-units/](https://veebull.github.io/tontastic-units/)
 
