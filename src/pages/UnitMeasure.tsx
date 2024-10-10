@@ -51,7 +51,7 @@ export const UnitMeasure: React.FC = () => {
       const nanoValue =
         parseFloat(cleanValue) *
         measures.find((m) => m.name === measure)!.value;
-      setTonValue(nanoValue ? (nanoValue / 1000000000).toString() : '');
+      setTonValue(nanoValue ? (nanoValue / 1000000000).toFixed(9) : '');
       const newValues = Object.fromEntries(
         measures.map((m) => [
           m.name,
