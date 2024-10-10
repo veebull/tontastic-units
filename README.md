@@ -1,50 +1,114 @@
-# React + TypeScript + Vite
+# TON Converter Unit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+TON Converter Unit is a React component that provides a user-friendly interface for converting between different TON (The Open Network) cryptocurrency units. It supports conversion between TON and various denominations including Nano, Micro, Milli, Kiloton, Megaton, and Gigaton.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Real-time conversion between TON and its various denominations
+- Support for decimal input in TON value
+- Responsive design with a grid layout for different screen sizes
+- Dark/Light theme toggle
+- Copy-to-clipboard functionality for each unit value
+- Input validation to ensure only valid numeric inputs are processed
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- Shadcn UI components
+- Framer Motion for animations
+- React Hot Toast for notifications
+- Lucide React for icons
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Installation
+
+1. Clone the repository
+
+   ```
+   git clone https://github.com/yourusername/ton-converter-unit.git
+   ```
+
+2. Navigate to the project directory
+
+   ```
+   cd ton-converter-unit
+   ```
+
+3. Install dependencies
+
+   ```
+   npm install
+   ```
+
+4. Ensure you have the required Shadcn UI components set up in your project
+
+## Usage
+
+Import the UnitMeasure component into your React application:
+
+```jsx
+import { UnitMeasure } from './path/to/UnitMeasure';
+
+function App() {
+  return (
+    <div>
+      <UnitMeasure />
+    </div>
+  );
+}
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Component Structure
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+The `UnitMeasure` component consists of:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- A main input for TON value with any precision
+- A grid of inputs for other TON units (Nano, Micro, Milli, Kiloton, Megaton, Gigaton)
+- Each input has a copy button for easy copying of values
+- A theme toggle button for switching between light and dark modes
+
+## Functionality
+
+- Users can input values in any unit, and all other units will update accordingly
+- The component handles decimal inputs and ensures proper conversion
+- Empty inputs are handled gracefully, resetting all fields when an input is cleared
+- The copy functionality allows users to easily copy any converted value
+- The theme can be toggled between light and dark modes
+
+## Customization
+
+The component uses Shadcn UI components and can be easily customized by modifying the CSS classes or adjusting the Shadcn theme.
+
+To customize the appearance:
+
+1. Modify the CSS classes in the component
+2. Adjust the Shadcn theme configuration in your project
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+
+Project Link: [https://github.com/yourusername/ton-converter-unit](https://github.com/yourusername/ton-converter-unit)
+
+## Acknowledgements
+
+- [Shadcn UI](https://ui.shadcn.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Hot Toast](https://react-hot-toast.com/)
+- [Lucide React](https://lucide.dev/)
