@@ -3,7 +3,6 @@
 ## Live Demo
 
 Check out the live version of the TON Converter Unit:
-
 [TON Converter Unit Demo](https://veebull.github.io/tontastic-units/)
 
 Try it out to see the converter in action!
@@ -110,9 +109,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+Your Name - [@TheMrArmbull](https://twitter.com/TheMrArmbull) - email@example.com
 
-Project Link: [https://github.com/yourusername/ton-converter-unit](https://github.com/yourusername/ton-converter-unit)
+Project Link: [https://veebull.github.io/tontastic-units/](https://veebull.github.io/tontastic-units/)
 
 ## Acknowledgements
 
