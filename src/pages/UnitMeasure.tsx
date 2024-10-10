@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ThemeProvider } from '@/components/theme-provider';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -7,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Moon, Sun, Copy, Check } from 'lucide-react';
 import { useTheme } from '@/components/theme-provider';
 import { AnimatePresence, motion } from 'framer-motion';
-import { toast, Toaster } from 'react-hot-toast';
+import { toast } from 'react-hot-toast';
 
 const measures = [
   { name: 'Nano', value: 1, symbol: 'n' },
@@ -18,7 +17,7 @@ const measures = [
   { name: 'Gigaton', value: 1000000000000000000, symbol: 'G' },
 ];
 
-export const UnitMeasure = () => {
+export const UnitMeasure: React.FC = () => {
   const [tonValue, setTonValue] = useState('');
   const [values, setValues] = useState<{ [key: string]: string }>(
     Object.fromEntries(measures.map((m) => [m.name, '']))
